@@ -1,0 +1,23 @@
+"""Below are the assighnments given on sept 18 in the python class on zoom."""
+
+
+''' 1.this program creates a list of 10 random nos. having values from 1 to 10'''
+from random import randint
+
+my_list=[]
+
+for i in range(10):
+  num=randint(1, 10)
+  my_list.append(int(num))
+print my_list
+
+
+''' 2.this program prints a pyramid pattern of random nos. having values b/n 0 and 11'''
+from random import randint
+x=randint(1,10)
+for r in range (0,x):
+  for c in range (0, x-r-1):
+    print ' ',
+  for c in range (0, r+1):
+    print ' %d' % (randint(1,10)),"",
+  print ''
